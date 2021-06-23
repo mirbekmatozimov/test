@@ -1,0 +1,24 @@
+.wrapper {
+  position: relative;
+}
+.crack{
+    display: none;
+}
+.crack-svg{
+    stroke-dashoffset: 217;
+    stroke-dasharray: 217;
+    animation-name: crackanim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+@keyframes crackanim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
